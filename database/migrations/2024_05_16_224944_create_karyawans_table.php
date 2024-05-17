@@ -41,7 +41,9 @@ return new class extends Migration
             $table->text('domisili_address');
             //blood type
             $table->string('blood_type');
-            
+            //foto
+            $table->string('foto');
+
             $table->timestamps();
         });
     }

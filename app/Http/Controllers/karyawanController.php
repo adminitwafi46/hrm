@@ -15,7 +15,8 @@ class karyawanController extends Controller
     //index_banin
     public function index_banin(): Response
     {
-        $karyawans = karyawan::all;
+        //get all karyawans
+        $karyawans = karyawan::all();
         return Inertia::render('Karyawan/IndexBanin', [
             'karyawans' => $karyawans,
         ]);
